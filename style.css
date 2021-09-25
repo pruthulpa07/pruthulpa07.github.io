@@ -200,7 +200,7 @@ span.cursor{
     object-fit: cover;
     background-color: white;
     padding: 0.3rem;
-    margin: 0.5rem;
+    margin: 1rem;
 }
 
 @media screen and (max-width:480px) {
@@ -243,9 +243,7 @@ span.cursor{
 }
 
 /* Masonry Card Section */
-.masonry-card-section {
-    /* height: 100vh; */
-}
+
 
 .masonry-card-section .grid-wrapper {
     margin: 0 auto;
@@ -291,4 +289,22 @@ span.cursor{
         width: 75vw;
     }
 
+}
+
+.rotate{
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
 }
